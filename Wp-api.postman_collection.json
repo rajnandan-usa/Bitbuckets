@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "424b99e4-34f9-4735-bac2-bd37efc50360",
+		"name": "Wp-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24099154",
+		"_collection_link": "https://grey-rocket-582462.postman.co/workspace/ecomm_laravel9~c4d848d5-4d7e-4be3-a51a-7260ee7add87/collection/24099154-424b99e4-34f9-4735-bac2-bd37efc50360?action=share&creator=24099154&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get All Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "4ed31d41a135204be4",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"post_title\": \"Updated Post Title\",\r\n    \"post_type\": \"Page\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost/wordpress/wp-json/wp_api/v1/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wordpress",
+						"wp-json",
+						"wp_api",
+						"v1",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post with pagination",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "4ed31d41a135204be4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/wordpress/wp-json/wp_api/v1/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wordpress",
+						"wp-json",
+						"wp_api",
+						"v1",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post by specific id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "4ed31d41a135204be4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/wordpress/wp-json/wp_api/v1/post/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wordpress",
+						"wp-json",
+						"wp_api",
+						"v1",
+						"post",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "4ed31d41a135204be4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"post_title\": \"Updated Post Title\",\r\n    \"post_type\": \"Page\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost/wordpress/wp-json/wp_api/v1/post/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wordpress",
+						"wp-json",
+						"wp_api",
+						"v1",
+						"post",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
