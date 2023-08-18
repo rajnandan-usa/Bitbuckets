@@ -15,7 +15,7 @@ Method: GET
 Headers:
 Key: Authorization, Value: 4ed31d41a135204be4
 3. Paginate Posts:
-URL: http://localhost/wordpress/wp-json/wp_api/v1/posts/1
+URL: http://localhost/wordpress/wp-json/wp_api/v1/posts_pages/1
 Method: GET
 Headers:
 Key: Authorization, Value: 4ed31d41a135204be4
