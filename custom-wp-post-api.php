@@ -25,7 +25,7 @@ class Custom_WP_Post_API {
             'callback' => array($this, 'get_post_by_id'),
         ));
 
-        register_rest_route($this->api_namespace, '/posts/(?P<page>\d+)', array(
+        register_rest_route($this->api_namespace, '/posts_pages/(?P<page>\d+)', array(
             'methods' => 'GET',
             'callback' => array($this, 'get_paginated_posts'),
         ));
