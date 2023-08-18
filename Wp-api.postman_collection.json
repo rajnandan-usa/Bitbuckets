@@ -59,7 +59,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost/wordpress/wp-json/wp_api/v1/posts/1",
+					"raw": "http://localhost/wordpress/wp-json/wp_api/v1/posts_pages/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
